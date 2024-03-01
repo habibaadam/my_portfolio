@@ -10,7 +10,7 @@ import {
   sql,
   clang,
   nginx,
-  bootstrap,
+  boot,
   reactjs,
   nodejs,
   git,
@@ -88,7 +88,7 @@ const technologies = [
   },
   {
     name: 'Bootstrap',
-    icon: bootstrap,
+    icon: boot,
   },
   {
     name: 'CSS 3',
@@ -134,7 +134,7 @@ const projects = [
         color: 'blue-text-gradient',
       },
       {
-        name: 'bootstrap',
+        name: 'boot',
         color: 'pink-text-gradient',
       },
     ],

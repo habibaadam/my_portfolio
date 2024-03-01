@@ -28,7 +28,7 @@ import sendHover from './icons/sendHover.png';
 import css from './tech/css.png';
 import docker from './tech/docker.png';
 import clang from './tech/clang.png';
-import bootstrap from './tech/bootstrap.png';
+import boot from './tech/boot.png';
 import python from './tech/python.png';
 import flask from './tech/flask.jpeg'
 import sql from './tech/sql.png';
@@ -76,7 +76,7 @@ export {
   devops,
   frontend,
   prototyping,
-  bootstrap,
+  boot,
   python,
   clang,
   github,
