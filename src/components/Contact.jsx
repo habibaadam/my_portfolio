@@ -29,21 +29,21 @@ const Contact = () => {
     //click on create a new template then click on save.
     emailjs
       .send(
-        'serviceID', // paste your ServiceID here (you'll get one when your service is created).
-        'templateID', // paste your TemplateID here (you'll find it under email templates).
+        'service_zellrnd', // paste your ServiceID here (you'll get one when your service is created).
+        'template_ixoyxmi', // paste your TemplateID here (you'll find it under email templates).
         {
           from_name: form.name,
-          to_name: 'YourName', // put your name here.
+          to_name: 'Habiba', // put your name here.
           from_email: form.email,
-          to_email: 'youremail@gmail.com', //put your email here.
+          to_email: 'habiepalmer@gmail.com', //put your email here.
           message: form.message,
         },
-        'yourpublickey' //paste your Public Key here. You'll get it in your profile section.
+        'qZha58gKupnY0Qnkk' //paste your Public Key here. You'll get it in your profile section.
       )
       .then(
         () => {
           setLoading(false);
-          alert('Thank you. I will get back to you as soon as possible.');
+          alert('Thank you. I will get back to you as soon as possible. :)');
 
           setForm({
             name: '',
@@ -61,7 +61,7 @@ const Contact = () => {
 
   return (
     <div
-      className="-mt-[8rem] xl:flex-row flex-col-reverse 
+      className="-mt-[8rem] xl:flex-row flex-col-reverse
       flex gap-10 overflow-hidden">
       <motion.div
         variants={slideIn('left', 'tween', 0.2, 1)}
@@ -120,12 +120,12 @@ const Contact = () => {
 
           <button
             type="submit"
-            className="live-demo flex justify-center sm:gap-4 
-            gap-3 sm:text-[20px] text-[16px] text-timberWolf 
+            className="live-demo flex justify-center sm:gap-4
+            gap-3 sm:text-[20px] text-[16px] text-timberWolf
             font-bold font-beckman items-center py-5
-            whitespace-nowrap sm:w-[130px] sm:h-[50px] 
-            w-[100px] h-[45px] rounded-[10px] bg-night 
-            hover:bg-battleGray hover:text-eerieBlack 
+            whitespace-nowrap sm:w-[130px] sm:h-[50px]
+            w-[100px] h-[45px] rounded-[10px] bg-night
+            hover:bg-battleGray hover:text-eerieBlack
             transition duration-[0.2s] ease-in-out"
             onMouseOver={() => {
               document
@@ -139,7 +139,7 @@ const Contact = () => {
             <img
               src={send}
               alt="send"
-              className="contact-btn sm:w-[26px] sm:h-[26px] 
+              className="contact-btn sm:w-[26px] sm:h-[26px]
               w-[23px] h-[23px] object-contain"
             />
           </button>

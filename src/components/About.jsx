@@ -37,8 +37,9 @@ const About = () => {
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-        Hi! I am Habiba, but you can call me Habie 🫂, As an aspiring junior full-stack engineer
-        I am passionate about continuous learning and growth. I am a self-taught developer with a
+        Hi! Glad you're here!
+        I am Habiba, but you can call me Habie 🫂, as an aspiring junior full-stack engineer
+        I am passionate about continuous learning and growth. I am a developer with a
         background in Science, specifically data science who found her passion in software development and have
         been working on projects that have helped me grow and learn new technologies since 2022.
       </motion.p>
