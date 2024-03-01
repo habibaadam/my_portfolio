@@ -8,7 +8,7 @@ import {
   python,
   flask,
   sql,
-  c,
+  clang,
   nginx,
   bootstrap,
   reactjs,
@@ -64,7 +64,7 @@ const services = [
 const technologies = [
   {
     name: 'C',
-    icon: c,
+    icon: clang,
   },
   {
     name: 'Python',
@@ -197,7 +197,7 @@ const projects = [
     description: `A project which tries to replicate the simple functionalities of a unix interpreter.`,
     tags: [
       {
-        name: 'c',
+        name: 'clang',
         color: 'blue-text-gradient',
       },
     ],
