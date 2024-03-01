@@ -7,9 +7,11 @@ import logo from './logo/logo-black.png';
 import logotext from './logo/logo-text-black.png';
 
 import shaq from './personal/shaq.png';
+import habiba from './personal/habiba.jpg';
 
 import backend from './icons/backend.png';
 import ux from './icons/ux.png';
+import devops from './icons/devops.jpeg';
 import frontend from './icons/frontend.png';
 import prototyping from './icons/prototyping.png';
 import github from './icons/github.png';
@@ -58,8 +60,10 @@ export {
   logo,
   logotext,
   shaq,
+  habiba,
   backend,
   ux,
+  devops,
   frontend,
   prototyping,
   github,

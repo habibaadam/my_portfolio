@@ -2,6 +2,7 @@ import {
   frontend,
   backend,
   ux,
+  devops,
   prototyping,
   javascript,
   typescript,
@@ -55,7 +56,7 @@ const services = [
   },
   {
     title: 'UI/UX Design',
-    icon: ux,
+    icon: devops,
   },
   {
     title: 'Software Prototyping',
