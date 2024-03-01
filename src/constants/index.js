@@ -1,11 +1,13 @@
 import {
   frontend,
   backend,
-  ux,
   devops,
   javascript,
   html,
   css,
+  python,
+  c,
+  bootstrap,
   reactjs,
   nodejs,
   git,
@@ -54,17 +56,30 @@ const services = [
 
 const technologies = [
   {
-    name: 'HTML 5',
-    icon: html,
+    name: 'C',
+    icon: c,
   },
   {
-    name: 'CSS 3',
-    icon: css,
+    name: 'Python',
+    icon: python,
   },
   {
     name: 'JavaScript',
     icon: javascript,
   },
+  {
+    name: 'HTML 5',
+    icon: html,
+  },
+  {
+    name: 'Bootstrap',
+    icon: bootstrap,
+  },
+  {
+    name: 'CSS 3',
+    icon: css,
+  },
+
   {
     name: 'React JS',
     icon: reactjs,
@@ -76,10 +91,6 @@ const technologies = [
   {
     name: 'git',
     icon: git,
-  },
-  {
-    name: 'docker',
-    icon: docker,
   },
 ];
 

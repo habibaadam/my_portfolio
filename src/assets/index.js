@@ -27,6 +27,9 @@ import sendHover from './icons/sendHover.png';
 
 import css from './tech/css.png';
 import docker from './tech/docker.png';
+import c from './tech/c.png';
+import bootstrap from './tech/bootstrap.png';
+import python from './tech/python.png';
 import figma from './tech/figma.png';
 import git from './tech/git.png';
 import html from './tech/html.png';
@@ -66,6 +69,9 @@ export {
   devops,
   frontend,
   prototyping,
+  bootstrap,
+  python,
+  c,
   github,
   close,
   download,
