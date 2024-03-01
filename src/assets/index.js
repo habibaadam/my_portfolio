@@ -30,6 +30,9 @@ import docker from './tech/docker.png';
 import c from './tech/c.png';
 import bootstrap from './tech/bootstrap.png';
 import python from './tech/python.png';
+import flask from './tech/flask.jpeg'
+import sql from './tech/sql.png';
+import nginx from './tech/nginx.png';
 import figma from './tech/figma.png';
 import git from './tech/git.png';
 import html from './tech/html.png';
@@ -49,6 +52,10 @@ import kelhel from './company/kelhel.png';
 import microverse from './company/microverse.png';
 
 import komikult from './projects/komikult.png';
+import celestial from './projects/celestial.png';
+import weather from './projects/weather.png';
+import hbnb from './projects/hbnb.jpeg';
+import shell from './projects/shell.jpg';
 import leaderboard from './projects/leaderboard.png';
 import math from './projects/math-magicians.png';
 import movie from './projects/movie-metro.png';
@@ -85,6 +92,7 @@ export {
   css,
   docker,
   figma,
+  sql,
   git,
   graphql,
   html,
@@ -106,4 +114,10 @@ export {
   dcc,
   kelhel,
   microverse,
+  celestial,
+  weather,
+  hbnb,
+  shell,
+  flask,
+  nginx,
 };

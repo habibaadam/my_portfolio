@@ -6,7 +6,10 @@ import {
   html,
   css,
   python,
+  flask,
+  sql,
   c,
+  nginx,
   bootstrap,
   reactjs,
   nodejs,
@@ -20,6 +23,10 @@ import {
   space,
   coverhunt,
   dcc,
+  celestial,
+  weather,
+  hbnb,
+  shell,
   kelhel,
   microverse,
 } from '../assets';
@@ -64,8 +71,16 @@ const technologies = [
     icon: python,
   },
   {
+    name: 'SQL',
+    icon: sql,
+  },
+  {
     name: 'JavaScript',
     icon: javascript,
+  },
+  {
+    name: 'Flask',
+    icon: flask,
   },
   {
     name: 'HTML 5',
@@ -85,135 +100,110 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: 'Node JS',
-    icon: nodejs,
-  },
-  {
     name: 'git',
     icon: git,
   },
+  {
+    name: 'nginx',
+    icon: nginx,
+  },
+
 ];
 
-const experiences = [
-  {
-    title: 'Front-End Developer',
-    company_name: 'Cover Hunt',
-    icon: coverhunt,
-    iconBg: '#333333',
-    date: 'Aug 2021 - Feb 2022',
-  },
-  {
-    title: 'Mentor (Volunteer)',
-    company_name: 'Microverse',
-    icon: microverse,
-    iconBg: '#333333',
-    date: 'Mar 2022 - May 2022',
-  },
-  {
-    title: 'Junior Software Engineer',
-    company_name: 'Kelhel',
-    icon: kelhel,
-    iconBg: '#333333',
-    date: 'May 2022 - Oct 2022',
-  },
-  {
-    title: 'Full Stack Developer',
-    company_name: 'Diversity Cyber Council',
-    icon: dcc,
-    iconBg: '#333333',
-    date: 'Sep 2022 - Present',
-  },
-];
 
 const projects = [
   {
     id: 'project-1',
-    name: 'KomiKult',
-    description: 'A comic characters list app that displays Marvel characters.',
+    name: 'Celestial Palate',
+    description: 'A website for a high-end restaurant with locations in South Africa, Japan, and Italy.',
     tags: [
       {
-        name: 'react',
+        name: 'python',
         color: 'blue-text-gradient',
       },
       {
-        name: 'mongodb',
+        name: 'flask',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'sql',
         color: 'green-text-gradient',
       },
       {
-        name: 'tailwind',
+        name: 'javascript',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'bootstrap',
         color: 'pink-text-gradient',
       },
     ],
-    image: komikult,
-    repo: 'https://github.com/shaqdeff/KomiKult',
-    demo: 'https://shaqdeff.github.io/KomiKult/',
+    image: celestial,
+    repo: 'https://github.com/habibaadam/Celestial-Palate-Portfolio',
+    demo: 'https://celestial.tophabiba.tech/public/',
   },
   {
     id: 'project-2',
-    name: 'Leaderboard',
+    name: 'Weather App',
     description:
-      'A leaderboard list app that displays scores submitted by different players.',
+      'A weather app that displays weather temperatures and forecast based on city searches.',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'restapi',
+        name: 'html',
         color: 'green-text-gradient',
       },
       {
-        name: 'scss',
+        name: 'css',
         color: 'pink-text-gradient',
       },
     ],
-    image: leaderboard,
+    image: weather,
     repo: 'https://github.com/shaqdeff/Leaderboard',
-    demo: 'https://shaqdeff.github.io/Leaderboard/',
+    demo: 'https://bibi-react-weather.netlify.app/',
   },
   {
     id: 'project-3',
-    name: 'Math Magicians',
-    description: 'This is a single-page calculator app built with React',
+    name: 'Airbnb Clone',
+    description: 'A small copy or clone of the popular Airbnb website.',
     tags: [
       {
-        name: 'nextjs',
+        name: 'python',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'sql',
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        name: 'flask',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'javascript',
         color: 'pink-text-gradient',
       },
     ],
-    image: math,
-    repo: 'https://github.com/shaqdeff/Math-Magicians',
-    demo: 'https://inspiring-medovik-37d3b3.netlify.app/',
+    image: hbnb,
+    repo: 'https://github.com/mukoe2020/AirBnB_clone_v4',
+    demo: 'http://54.205.99.166:5003/2-hbnb',
   },
   {
     id: 'project-4',
-    name: 'Movie Metro',
-    description: `A single-page application that allows users to search for any movie or show's ratings and its details.`,
+    name: 'Simple Shell',
+    description: `A project which tries to replicate the simple functionalities of a unix interpreter.`,
     tags: [
       {
-        name: 'nextjs',
+        name: 'c',
         color: 'blue-text-gradient',
       },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
     ],
-    image: movie,
-    repo: 'https://github.com/shaqdeff/Movie-Metro',
-    demo: 'https://movie-metro.netlify.app/',
+    image: shell,
+    repo: 'https://github.com/mukoe2020/simple_shell',
+    demo: 'https://github.com/mukoe2020/simple_shell',
   },
   {
     id: 'project-5',
@@ -240,4 +230,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, projects };
+export { services, technologies, projects };
