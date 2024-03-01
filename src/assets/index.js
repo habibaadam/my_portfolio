@@ -8,6 +8,7 @@ import logotext from './logo/logo-text-black.png';
 
 import shaq from './personal/shaq.png';
 import habiba from './personal/habiba.jpg';
+import cv from './personal/cv.pdf';
 
 import backend from './icons/backend.png';
 import ux from './icons/ux.png';
@@ -75,6 +76,7 @@ export {
   ux,
   devops,
   frontend,
+  cv,
   prototyping,
   boot,
   python,

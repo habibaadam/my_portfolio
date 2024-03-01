@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import 'react-vertical-timeline-component/style.min.css';
 import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
-import { download, downloadHover, resume } from '../assets';
+import { download, downloadHover, resume, cv } from '../assets';
 import { textVariant } from '../utils/motion';
 
 const ExperienceCard = ({ experience }) => (
@@ -51,6 +51,12 @@ const ExperienceCard = ({ experience }) => (
 );
 
 const Experience = () => {
+    const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = cv; // Assuming cv is the path to your resume file in the assets folder
+    link.download = 'habiba_cv.pdf'; // Set the filename for the downloaded file
+    link.click();
+  };
   return (
     <>
             <button
@@ -62,12 +68,7 @@ const Experience = () => {
               sm:mt-[22px] mt-[16px] hover:bg-battleGray
               hover:text-eerieBlack transition duration-[0.2s]
               ease-in-out"
-              onClick={() =>
-                window.open(
-                  'https://docs.google.com/document/d/1LwyYURDUAKXaE11XpI7USP5t57LRAdoqrTcEB58bIg0/edit?usp=sharing', //paste the link to your resume here
-                  '_blank'
-                )
-              }
+              onClick={handleDownload}
               onMouseOver={() => {
                 document
                   .querySelector('.download-btn')
