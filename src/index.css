@@ -224,22 +224,23 @@
 @media only screen and (max-width: 1000px) {
   #about {
   margin: 0 auto;
-  font-size: 60px;
+  font-size: 50px;
  }
 
 #projects {
   margin: 0 auto;
-  font-size: 60px;
+  font-size: 50px;
 }
 
 #contact {
   margin: 0 auto;
-  font-size: 60px;
+  font-size: 50px;
   letter-spacing: -2px;
 }
 
 .bg-flashWhite {
   background-color: rgb(172, 168, 168);
 }
+
 
 }
