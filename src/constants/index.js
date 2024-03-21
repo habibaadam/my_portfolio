@@ -162,7 +162,7 @@ const projects = [
       },
     ],
     image: weather,
-    repo: 'https://github.com/shaqdeff/Leaderboard',
+    repo: 'https://github.com/habibaadam/react-weather-app',
     demo: 'https://bibi-react-weather.netlify.app/',
   },
   {
