@@ -14,21 +14,12 @@ import {
   reactjs,
   nodejs,
   git,
-  docker,
-  komikult,
-  leaderboard,
-  math,
-  movie,
-  nyeusi,
-  space,
-  coverhunt,
-  dcc,
   celestial,
+  resumerocket,
   weather,
   hbnb,
+  mongo,
   shell,
-  kelhel,
-  microverse,
 } from '../assets';
 
 export const navLinks = [
@@ -62,6 +53,15 @@ const services = [
 ];
 
 const technologies = [
+  {
+    name: 'NodeJs',
+    icon: nodejs,
+  },
+
+  {
+    name: 'MongoDb',
+    icon: mongo,
+  },
   {
     name: 'C',
     icon: clang,
@@ -112,8 +112,37 @@ const technologies = [
 
 
 const projects = [
+
   {
     id: 'project-1',
+    name: 'Resume Rocket',
+    description: 'An AI cv powered generation tool for tech aspirants or people in tech',
+    tags: [
+      {
+        name: 'node-js',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'express-js',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'react-js',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'mongo',
+        color: 'pink-text-gradient',
+      }
+
+    ],
+    image: resumerocket,
+    repo: 'https://github.com/habibaadam/ResumeRocket',
+    demo: 'https://resume-rocket-nu.vercel.app/'
+
+  },
+  {
+    id: 'project-2',
     name: 'Celestial Palate',
     description: 'A website for a high-end restaurant with locations in South Africa, Japan, and Italy.',
     tags: [
@@ -143,7 +172,7 @@ const projects = [
     demo: 'https://celestial.tophabiba.tech/public/',
   },
   {
-    id: 'project-2',
+    id: 'project-3',
     name: 'Weather App',
     description:
       'A weather app that displays weather temperatures and forecast based on city searches.',
@@ -166,7 +195,7 @@ const projects = [
     demo: 'https://bibi-react-weather.netlify.app/',
   },
   {
-    id: 'project-3',
+    id: 'project-4',
     name: 'Airbnb Clone',
     description: 'A small copy or clone of the popular Airbnb website.',
     tags: [
@@ -192,7 +221,7 @@ const projects = [
     demo: 'http://54.205.99.166:5003/2-hbnb',
   },
   {
-    id: 'project-4',
+    id: 'project-5',
     name: 'Simple Shell',
     description: `A project which tries to replicate the simple functionalities of a unix interpreter.`,
     tags: [

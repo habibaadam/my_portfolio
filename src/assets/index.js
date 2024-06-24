@@ -26,6 +26,7 @@ import resume from './icons/resume.png';
 import send from './icons/send.png';
 import sendHover from './icons/sendHover.png';
 
+
 import css from './tech/css.png';
 import docker from './tech/docker.png';
 import clang from './tech/clang.png';
@@ -46,6 +47,7 @@ import typescript from './tech/typescript.png';
 import graphql from './tech/graphql.png';
 import postgresql from './tech/postgresql.png';
 import rubyrails from './tech/rubyrails.png';
+import mongo from './tech/mongodb.png';
 
 import coverhunt from './company/coverhunt.png';
 import dcc from './company/dcc.png';
@@ -62,6 +64,7 @@ import math from './projects/math-magicians.png';
 import movie from './projects/movie-metro.png';
 import nyeusi from './projects/nyeusi.png';
 import space from './projects/space-hub.png';
+import resumerocket from './projects/resumerocket.png';
 
 export {
   bwmap,
@@ -122,4 +125,6 @@ export {
   shell,
   flask,
   nginx,
+  resumerocket,
+  mongo,
 };

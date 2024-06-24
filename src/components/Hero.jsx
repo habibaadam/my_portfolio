@@ -46,8 +46,8 @@ const Hero = () => {
               </span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-eerieBlack`}>
-              An aspiring junior software engineer. <br className="sm:block hidden" />
-              Proficient in backend development, and learning front-end.
+              Junior Software Engineer. <br className="sm:block hidden" />
+              Proficient in backend development, and learning front-end development.
             </p>
           </div>
           <div
