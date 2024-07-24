@@ -1,6 +1,5 @@
-# Portfolio Template
-
-https://github.com/shaqdeff/Portfolio-Template/assets/92020713/eed76a82-e59d-440b-a04c-a2dc00a508b7
+# Portfolio Website
+![portfolio_image](https://i.imgur.com/w806z1f.png)
 
 ## Built With
 
@@ -13,6 +12,7 @@ https://github.com/shaqdeff/Portfolio-Template/assets/92020713/eed76a82-e59d-440
 ## Authors
 
 👤 **Shaquille Ndunda**
+👤  **Habiba Adam**
 
 - GitHub: [@shaqdeff](https://github.com/shaqdeff)
 - Twitter: [@shaquillendunda](https://twitter.com/shaquillendunda)
