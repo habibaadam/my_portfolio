@@ -20,6 +20,7 @@ import {
   hbnb,
   mongo,
   shell,
+  optima,
 } from '../assets';
 
 export const navLinks = [
@@ -109,6 +110,17 @@ const technologies = [
   },
 
 ];
+
+const experiences = [
+  {
+    title: 'Full Stack Developer Intern',
+    company_name: 'Optima Data Services',
+    icon: optima,
+    iconBg: '#333333',
+    date: 'June 2024 - July 2024',
+  },
+];
+
 
 
 const projects = [
@@ -236,4 +248,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, projects };
+export { services, technologies, experiences, projects };
