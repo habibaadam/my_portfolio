@@ -21,6 +21,8 @@ import {
   mongo,
   shell,
   optima,
+  hacsa,
+  typescript,
 } from '../assets';
 
 export const navLinks = [
@@ -80,6 +82,10 @@ const technologies = [
     icon: javascript,
   },
   {
+    name: 'TypeScript',
+    icon: typescript,
+  },
+  {
     name: 'Flask',
     icon: flask,
   },
@@ -112,6 +118,13 @@ const technologies = [
 ];
 
 const experiences = [
+  {
+    title: 'Lead Backend Instructor',
+    company_name: 'HACSA',
+    icon: hacsa,
+    iconBg: '#333333',
+    date: 'August 2024 - Present',
+  },
   {
     title: 'Full Stack Developer Intern',
     company_name: 'Optima Data Services',

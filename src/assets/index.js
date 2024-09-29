@@ -49,8 +49,10 @@ import postgresql from './tech/postgresql.png';
 import rubyrails from './tech/rubyrails.png';
 import mongo from './tech/mongodb.png';
 
+
 import coverhunt from './company/coverhunt.png';
 import optima from './company/optima.png';
+import hacsa from './company/hacsa.png';
 import dcc from './company/dcc.png';
 import kelhel from './company/kelhel.png';
 import microverse from './company/microverse.png';
@@ -129,4 +131,5 @@ export {
   resumerocket,
   mongo,
   optima,
+  hacsa,
 };
