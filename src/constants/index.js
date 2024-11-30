@@ -194,7 +194,7 @@ const projects = [
     ],
     image: celestial,
     repo: 'https://github.com/habibaadam/Celestial-Palate-Portfolio',
-    demo: 'https://celestial.tophabiba.tech/public/',
+    demo: 'https://celestial-palate-portfolio.vercel.app/',
   },
   {
     id: 'project-3',
