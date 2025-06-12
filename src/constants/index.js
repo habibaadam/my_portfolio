@@ -27,6 +27,8 @@ import {
   nestjs,
   postgresql,
   phishfortress,
+  faithfulmatch,
+  phishlogo,
 } from '../assets';
 
 export const navLinks = [
@@ -46,13 +48,14 @@ export const navLinks = [
 
 const services = [
   {
-    title: 'Frontend Developer',
-    icon: frontend,
-  },
-  {
     title: 'Backend Developer',
     icon: backend,
   },
+  {
+    title: 'Frontend Developer',
+    icon: frontend,
+  },
+
   {
     title: 'Devops Engineer',
     icon: devops,
@@ -135,6 +138,20 @@ const technologies = [
 ];
 
 const experiences = [
+  {
+    title: 'Freelance Full Stack Developer',
+    company_name: 'PhishFortress',
+    icon: phishlogo,
+    iconBg: '#333333',
+    date: 'March 2025 - June 2025',
+  },
+  {
+    title: 'Backend Developer',
+    company_name: 'Faithful Match',
+    icon: faithfulmatch,
+    iconBg: '#333333',
+    date: 'February 2025 - Present',
+  },
   {
     title: 'Lead Backend Instructor',
     company_name: 'HACSA',

@@ -58,6 +58,7 @@ import dcc from './company/dcc.png';
 import kelhel from './company/kelhel.png';
 import microverse from './company/microverse.png';
 import faithfulmatch from './company/faithfulmatch.png';
+import phishlogo from './company/phish-logo.jpeg';
 
 import komikult from './projects/komikult.png';
 import celestial from './projects/celestial.png';
@@ -139,4 +140,5 @@ export {
   faithfulmatch,
   phishfortress,
   nestjs,
+  phishlogo,
 };
