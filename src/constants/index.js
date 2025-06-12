@@ -55,31 +55,28 @@ const services = [
     title: 'Frontend Developer',
     icon: frontend,
   },
-
-  {
-    title: 'Devops Engineer',
-    icon: devops,
-  },
 ];
 
 const technologies = [
-  {
-    name: 'NodeJs',
-    icon: nodejs,
+    {
+    name: 'Python',
+    icon: python,
   },
 
   {
     name: 'MongoDb',
     icon: mongo,
   },
+
+  {
+    name: 'NodeJs',
+    icon: nodejs,
+  },
   {
     name: 'C',
     icon: clang,
   },
-  {
-    name: 'Python',
-    icon: python,
-  },
+
   {
     name: 'MYSQL',
     icon: sql,
