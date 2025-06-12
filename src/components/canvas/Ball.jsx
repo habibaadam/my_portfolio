@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import {
   Decal,
@@ -10,7 +10,31 @@ import {
 import Loader from '../Loader';
 
 const Ball = (props) => {
-  const [decal] = useTexture([props.imgUrl]);
+  const [error, setError] = useState(false);
+  const [decal] = useTexture([props.imgUrl], (texture) => {
+    texture.onerror = () => {
+      setError(true);
+      console.error('Error loading texture:', props.imgUrl);
+    };
+  });
+
+  if (error) {
+    return (
+      <Float speed={2.5} rotationIntensity={1} floatIntensity={2}>
+        <ambientLight intensity={0.25} />
+        <directionalLight position={[0, 0, 0.05]} />
+        <mesh castShadow receiveShadow scale={2.75}>
+          <icosahedronGeometry args={[1, 2]} />
+          <meshStandardMaterial
+            color="#3d3d3d"
+            polygonOffset
+            polygonOffsetFactor={-5}
+            flatShading
+          />
+        </mesh>
+      </Float>
+    );
+  }
 
   return (
     <Float speed={2.5} rotationIntensity={1} floatIntensity={2}>

@@ -23,6 +23,9 @@ import {
   optima,
   hacsa,
   typescript,
+  fastapi,
+  nestjs,
+  postgresql,
 } from '../assets';
 
 export const navLinks = [
@@ -74,8 +77,12 @@ const technologies = [
     icon: python,
   },
   {
-    name: 'SQL',
+    name: 'MYSQL',
     icon: sql,
+  },
+  {
+    name: 'PostgreSQL',
+    icon: postgresql,
   },
   {
     name: 'JavaScript',
@@ -84,6 +91,10 @@ const technologies = [
   {
     name: 'TypeScript',
     icon: typescript,
+  },
+  {
+    name: 'NestJS',
+    icon: nestjs,
   },
   {
     name: 'Flask',
@@ -114,6 +125,11 @@ const technologies = [
     name: 'nginx',
     icon: nginx,
   },
+  {
+    name: 'FastAPI',
+    icon: fastapi,
+  },
+
 
 ];
 

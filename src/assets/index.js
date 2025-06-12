@@ -45,10 +45,11 @@ import redux from './tech/redux.png';
 import tailwind from './tech/tailwind.png';
 import typescript from './tech/typescript.png';
 import graphql from './tech/graphql.png';
-import postgresql from './tech/postgresql.png';
 import rubyrails from './tech/rubyrails.png';
 import mongo from './tech/mongodb.png';
-
+import fastapi from './tech/fastapi-logo.png';
+import nestjs from './tech/nestjs-icon.png';
+import postgresql from './tech/postgresql-icon.png';
 
 import coverhunt from './company/coverhunt.png';
 import optima from './company/optima.png';
@@ -56,6 +57,7 @@ import hacsa from './company/hacsa.png';
 import dcc from './company/dcc.png';
 import kelhel from './company/kelhel.png';
 import microverse from './company/microverse.png';
+import faithfulmatch from './company/faithfulmatch.png';
 
 import komikult from './projects/komikult.png';
 import celestial from './projects/celestial.png';
@@ -68,6 +70,7 @@ import movie from './projects/movie-metro.png';
 import nyeusi from './projects/nyeusi.png';
 import space from './projects/space-hub.png';
 import resumerocket from './projects/resumerocket.png';
+import phishfortress from './projects/phishfortress.png';
 
 export {
   bwmap,
@@ -132,4 +135,8 @@ export {
   mongo,
   optima,
   hacsa,
+  fastapi,
+  faithfulmatch,
+  phishfortress,
+  nestjs,
 };
