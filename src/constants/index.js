@@ -26,6 +26,7 @@ import {
   fastapi,
   nestjs,
   postgresql,
+  phishfortress,
 } from '../assets';
 
 export const navLinks = [
@@ -154,8 +155,39 @@ const experiences = [
 
 const projects = [
 
+
   {
     id: 'project-1',
+    name: 'PhishFortress',
+    description: 'A phishing detection tool/website that uses a real phishing simulation to detect phishing emails',
+    tags: [
+      {
+        name: 'python',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'fastapi',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'react-js',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'postgresql',
+        color: 'pink-text-gradient',
+      }
+
+    ],
+    image: phishfortress,
+    repo: 'https://github.com/Milly801/PhishingFostres',
+    demo: 'https://phishfortress.me'
+
+  },
+
+
+  {
+    id: 'project-2',
     name: 'Resume Rocket',
     description: 'An AI cv powered generation tool for tech aspirants or people in tech',
     tags: [
@@ -260,20 +292,6 @@ const projects = [
     image: hbnb,
     repo: 'https://github.com/mukoe2020/AirBnB_clone_v4',
     demo: 'http://54.205.99.166:5003/2-hbnb',
-  },
-  {
-    id: 'project-5',
-    name: 'Simple Shell',
-    description: `A project which tries to replicate the simple functionalities of a unix interpreter.`,
-    tags: [
-      {
-        name: 'clang',
-        color: 'blue-text-gradient',
-      },
-    ],
-    image: shell,
-    repo: 'https://github.com/mukoe2020/simple_shell',
-    demo: 'https://github.com/mukoe2020/simple_shell',
   },
 ];
 

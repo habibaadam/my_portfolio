@@ -38,7 +38,7 @@ const About = () => {
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
 
-Hi there! I'm Habiba, but you can call me Habie, a Junior Full-Stack Engineer(MERN) with passion for learning and growing!
+Hi there! I'm Habiba, but you can call me Habie, a Full-Stack Engineer(MERN) with passion for learning and growing!
 Though I started my journey in science, specifically data science,
 I discovered a love for software engineering in 2022. Since then, I have been diving headfirst into projects that challenge and aid in my mastering of new technologies.
       </motion.p>
