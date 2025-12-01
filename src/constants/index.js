@@ -28,6 +28,8 @@ import {
     phishlogo,
     simmyfranks,
     guardduty,
+    awsvpc,
+    awss3,
 } from '../assets'
 
 export const navLinks = [
@@ -66,6 +68,10 @@ const technologies = [
         name: 'MongoDb',
         icon: mongo,
     },
+    {
+        name: 'AWS VPC',
+        icon: awsvpc,
+    },
 
     {
         name: 'NodeJs',
@@ -83,6 +89,10 @@ const technologies = [
     {
         name: 'PostgreSQL',
         icon: postgresql,
+    },
+    {
+        name: 'AWS S3',
+        icon: awss3,
     },
     {
         name: 'JavaScript',

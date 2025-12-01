@@ -49,6 +49,8 @@ import mongo from './tech/mongodb.png'
 import fastapi from './tech/fastapi-logo.png'
 import nestjs from './tech/nestjs-icon.png'
 import postgresql from './tech/postgresql-icon.png'
+import awsvpc from './tech/awsvpc.webp'
+import awss3 from './tech/awss3.png'
 
 import coverhunt from './company/coverhunt.png'
 import optima from './company/optima.png'
@@ -144,4 +146,6 @@ export {
     phishlogo,
     simmyfranks,
     guardduty,
+    awsvpc,
+    awss3,
 }
