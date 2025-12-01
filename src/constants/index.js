@@ -30,6 +30,10 @@ import {
     guardduty,
     awsvpc,
     awss3,
+    awslambda,
+    awsec2,
+    awscloudwatch,
+    awsiam,
 } from '../assets'
 
 export const navLinks = [
@@ -136,8 +140,24 @@ const technologies = [
         icon: nginx,
     },
     {
+        name: 'AWS EC2',
+        icon: awsec2,
+    },
+    {
+        name: 'AWS Lambda',
+        icon: awslambda,
+    },
+    {
         name: 'FastAPI',
         icon: fastapi,
+    },
+    {
+        name: 'AWS CloudWatch',
+        icon: awscloudwatch,
+    },
+    {
+        name: 'AWS IAM',
+        icon: awsiam,
     },
 ]
 

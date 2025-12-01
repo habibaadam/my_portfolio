@@ -51,6 +51,10 @@ import nestjs from './tech/nestjs-icon.png'
 import postgresql from './tech/postgresql-icon.png'
 import awsvpc from './tech/awsvpc.webp'
 import awss3 from './tech/awss3.png'
+import awslambda from './tech/awslambda.png'
+import awsec2 from './tech/awsec2.svg'
+import awscloudwatch from './tech/awscloudwatch.png'
+import awsiam from './tech/awsiam.png'
 
 import coverhunt from './company/coverhunt.png'
 import optima from './company/optima.png'
@@ -148,4 +152,8 @@ export {
     guardduty,
     awsvpc,
     awss3,
+    awslambda,
+    awsec2,
+    awscloudwatch,
+    awsiam,
 }
