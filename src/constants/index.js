@@ -27,6 +27,7 @@ import {
     faithfulmatch,
     phishlogo,
     simmyfranks,
+    guardduty,
 } from '../assets'
 
 export const navLinks = [
@@ -198,6 +199,15 @@ const projects = [
     },
     {
         id: 'project-2',
+        name: 'ThreatDetection',
+        description:
+            'This project demonstrates security vulnerabilities in web applications and how AWS GuardDuty can detect them. I deployed a purposely vulnerable web application (OWASP Juice Shop) and simulated various attacks while monitoring GuardDutys detection capabilities.',
+        image: guardduty,
+        repo: 'https://github.com/habibaadam/Threat-Detection-GuardDuty',
+        demo: 'https://github.com/habibaadam/Threat-Detection-GuardDuty',
+    },
+    {
+        id: 'project-3',
         name: 'Celestial Palate',
         description:
             'A website for a high-end restaurant with locations in South Africa, Japan, and Italy.',
@@ -228,7 +238,7 @@ const projects = [
         demo: 'https://celestial-palate-portfolio.vercel.app/',
     },
     {
-        id: 'project-3',
+        id: 'project-4',
         name: 'Weather App',
         description:
             'A weather app that displays weather temperatures and forecast based on city searches.',
@@ -251,7 +261,7 @@ const projects = [
         demo: 'https://bibi-react-weather.netlify.app/',
     },
     {
-        id: 'project-4',
+        id: 'project-5',
         name: 'Airbnb Clone',
         description: 'A small copy or clone of the popular Airbnb website.',
         tags: [

@@ -72,6 +72,7 @@ import nyeusi from './projects/nyeusi.png'
 import space from './projects/space-hub.png'
 import resumerocket from './projects/resumerocket.png'
 import phishfortress from './projects/phishfortress.png'
+import guardduty from './projects/guardduty.png'
 
 export {
     bwmap,
@@ -142,4 +143,5 @@ export {
     nestjs,
     phishlogo,
     simmyfranks,
+    guardduty,
 }
