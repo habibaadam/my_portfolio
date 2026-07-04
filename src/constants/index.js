@@ -260,7 +260,7 @@ const projects = [
         id: 'project-1',
         name: 'SimmyFranks',
         description:
-            'A phishing detection tool/website that uses a real phishing simulation to detect phishing emails',
+            'Built a Next.js-based corporate website for SimmyFranks, an e-commerce business focused on supplying premium laboratory equipment, chemicals, reagents and complete lab solutions in Nigeria. Implemented security and auth features including reCAPTCHA v3 for spam/bot protection and Google OAuth for user authentication, and resolved production deployment challenges to ensure a smooth launch.',
         tags: [
             {
                 name: 'nextjs',
