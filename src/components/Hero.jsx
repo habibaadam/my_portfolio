@@ -51,9 +51,9 @@ const Hero = () => {
                         </h1>
                         <p className={`${styles.heroSubText} mt-2 text-eerieBlack`}>
                             Full-Stack Engineer · Backend Specialist
-                            <br className="sm:block hidden" />
+                            <br />
                             AWS Certified Solutions Architect &amp; Security Specialty
-                            <br className="sm:block hidden" />
+                            <br />
                             AWS Community Builder
                         </p>
                     </div>

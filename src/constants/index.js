@@ -1,3 +1,4 @@
+import { logo } from '../assets'
 import {
     frontend,
     backend,
@@ -24,7 +25,8 @@ import {
     nestjs,
     postgresql,
     phishfortress,
-    faithfulmatch,
+    simmy,
+    nextjs,
     phishlogo,
     simmyfranks,
     guardduty,
@@ -111,6 +113,10 @@ const technologies = [
         icon: nestjs,
     },
     {
+        name: 'NextJS',
+        icon: nextjs,
+    },
+    {
         name: 'Flask',
         icon: flask,
     },
@@ -184,14 +190,6 @@ const experiences = [
         date: 'March 2025 - June 2025',
     },
     {
-        title: 'Backend Developer',
-        company_name: 'Faithful Match',
-        icon: faithfulmatch,
-        iconBg: '#333333',
-        date: 'February 2025 - Present',
-    },
-
-    {
         title: 'Full Stack Developer Intern',
         company_name: 'Optima Data Services',
         icon: optima,
@@ -203,6 +201,25 @@ const experiences = [
 const projects = [
     {
         id: 'project-1',
+        name: 'SimmyFranks',
+        description:
+            'A phishing detection tool/website that uses a real phishing simulation to detect phishing emails',
+        tags: [
+            {
+                name: 'nextjs',
+                color: 'blue-text-gradient',
+            },
+            {
+                name: 'mongo',
+                color: 'green-text-gradient',
+            },
+        ],
+        image: simmy,
+        repo: 'https://github.com/Milly801/PhishingFostres',
+        demo: 'https://simmyfranks.com',
+    },
+    {
+        id: 'project-2',
         name: 'PhishFortress',
         description:
             'A phishing detection tool/website that uses a real phishing simulation to detect phishing emails',

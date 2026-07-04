@@ -79,6 +79,8 @@ import space from './projects/space-hub.png'
 import resumerocket from './projects/resumerocket.png'
 import phishfortress from './projects/phishfortress.png'
 import guardduty from './projects/guardduty.png'
+import simmy from './projects/simmy.png'
+import nextjs from './tech/nextjs.webp'
 
 export {
     bwmap,
@@ -156,4 +158,6 @@ export {
     awsec2,
     awscloudwatch,
     awsiam,
+    simmy,
+    nextjs,
 }
