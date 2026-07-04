@@ -28,8 +28,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        'service_zellrnd',
-        'template_ixoyxmi',
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
           to_name: 'Habiba',
@@ -37,7 +37,7 @@ const Contact = () => {
           to_email: 'habiepalmer@gmail.com',
           message: form.message,
         },
-        'qZha58gKupnY0Qnkk'
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
@@ -83,7 +83,8 @@ const Contact = () => {
               className="bg-eerieBlack py-4 px-6
               placeholder:text-taupe
               text-timberWolf rounded-lg outline-none
-              border-none font-medium"
+              border-none font-medium
+              focus:ring-1 focus:ring-taupe transition-shadow duration-200"
             />
           </label>
           <label className="flex flex-col">
@@ -97,7 +98,8 @@ const Contact = () => {
               className="bg-eerieBlack py-4 px-6
               placeholder:text-taupe
               text-timberWolf rounded-lg outline-none
-              border-none font-medium"
+              border-none font-medium
+              focus:ring-1 focus:ring-taupe transition-shadow duration-200"
             />
           </label>
           <label className="flex flex-col">
@@ -113,7 +115,8 @@ const Contact = () => {
               className="bg-eerieBlack py-4 px-6
               placeholder:text-taupe
               text-timberWolf rounded-lg outline-none
-              border-none font-medium resize-none"
+              border-none font-medium resize-none
+              focus:ring-1 focus:ring-taupe transition-shadow duration-200"
             />
           </label>
 

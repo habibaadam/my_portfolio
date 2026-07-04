@@ -163,11 +163,18 @@ const technologies = [
 
 const experiences = [
     {
-        title: 'Full Stack Developer',
+        title: 'Full Stack Developer - Backend Specialized',
         company_name: 'SimmyFranks West Africa Ltd',
         icon: simmyfranks,
         iconBg: '#333333',
         date: 'July 2025 - Present',
+    },
+    {
+        title: 'Lead Backend Instructor',
+        company_name: 'HACSA',
+        icon: hacsa,
+        iconBg: '#333333',
+        date: 'August 2024 - Present',
     },
     {
         title: 'Freelance Full Stack Developer',
@@ -183,13 +190,7 @@ const experiences = [
         iconBg: '#333333',
         date: 'February 2025 - Present',
     },
-    {
-        title: 'Lead Backend Instructor',
-        company_name: 'HACSA',
-        icon: hacsa,
-        iconBg: '#333333',
-        date: 'August 2024 - Present',
-    },
+
     {
         title: 'Full Stack Developer Intern',
         company_name: 'Optima Data Services',

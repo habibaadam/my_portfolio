@@ -20,6 +20,7 @@ const Navbar = () => {
             setActive('');
             window.scrollTo(0, 0);
           }}>
+          <img src={logotext} alt="logo" className="h-8 object-contain" />
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-14 mt-2">
           {navLinks.map((nav) => (

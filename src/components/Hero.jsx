@@ -50,9 +50,11 @@ const Hero = () => {
                             </span>
                         </h1>
                         <p className={`${styles.heroSubText} mt-2 text-eerieBlack`}>
-                            Software Engineer, <br className="sm:block hidden" />
-                            Proficient and focused on mainly backend development, with a touch of
-                            front end development, pivoting into cloud computing.
+                            Full-Stack Engineer · Backend Specialist
+                            <br className="sm:block hidden" />
+                            AWS Certified Solutions Architect &amp; Security Specialty
+                            <br className="sm:block hidden" />
+                            AWS Community Builder
                         </p>
                     </div>
                     <div
