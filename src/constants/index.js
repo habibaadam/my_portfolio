@@ -69,19 +69,9 @@ const technologies = [
         name: 'Python',
         icon: python,
     },
-
     {
-        name: 'MongoDb',
-        icon: mongo,
-    },
-    {
-        name: 'AWS VPC',
-        icon: awsvpc,
-    },
-
-    {
-        name: 'NodeJs',
-        icon: nodejs,
+        name: 'JavaScript',
+        icon: javascript,
     },
     {
         name: 'C',
@@ -89,21 +79,29 @@ const technologies = [
     },
 
     {
-        name: 'MYSQL',
-        icon: sql,
+        name: 'MongoDb',
+        icon: mongo,
     },
     {
         name: 'PostgreSQL',
         icon: postgresql,
     },
+
+    {
+        name: 'MYSQL',
+        icon: sql,
+    },
+
     {
         name: 'AWS S3',
         icon: awss3,
     },
+
     {
-        name: 'JavaScript',
-        icon: javascript,
+        name: 'NodeJs',
+        icon: nodejs,
     },
+
     {
         name: 'TypeScript',
         icon: typescript,
@@ -121,6 +119,15 @@ const technologies = [
         icon: flask,
     },
     {
+        name: 'FastAPI',
+        icon: fastapi,
+    },
+    {
+        name: 'React JS',
+        icon: reactjs,
+    },
+
+    {
         name: 'HTML 5',
         icon: html,
     },
@@ -134,10 +141,6 @@ const technologies = [
     },
 
     {
-        name: 'React JS',
-        icon: reactjs,
-    },
-    {
         name: 'git',
         icon: git,
     },
@@ -146,6 +149,11 @@ const technologies = [
         icon: nginx,
     },
     {
+        name: 'AWS VPC',
+        icon: awsvpc,
+    },
+
+    {
         name: 'AWS EC2',
         icon: awsec2,
     },
@@ -153,10 +161,7 @@ const technologies = [
         name: 'AWS Lambda',
         icon: awslambda,
     },
-    {
-        name: 'FastAPI',
-        icon: fastapi,
-    },
+
     {
         name: 'AWS CloudWatch',
         icon: awscloudwatch,
@@ -164,6 +169,58 @@ const technologies = [
     {
         name: 'AWS IAM',
         icon: awsiam,
+    },
+]
+
+const technologyGroups = [
+    {
+        label: 'Languages',
+        items: [
+            { name: 'Python', icon: python },
+            { name: 'JavaScript', icon: javascript },
+            { name: 'TypeScript', icon: typescript },
+            { name: 'C', icon: clang },
+        ],
+    },
+    {
+        label: 'Frameworks & Libraries',
+        items: [
+            { name: 'Node.js', icon: nodejs },
+            { name: 'NestJS', icon: nestjs },
+            { name: 'FastAPI', icon: fastapi },
+            { name: 'Flask', icon: flask },
+            { name: 'Next.js', icon: nextjs },
+            { name: 'React JS', icon: reactjs },
+        ],
+    },
+    {
+        label: 'Databases',
+        items: [
+            { name: 'MongoDB', icon: mongo },
+            { name: 'MySQL', icon: sql },
+            { name: 'PostgreSQL', icon: postgresql },
+        ],
+    },
+    {
+        label: 'Cloud (AWS)',
+        items: [
+            { name: 'AWS VPC', icon: awsvpc },
+            { name: 'AWS S3', icon: awss3 },
+            { name: 'AWS EC2', icon: awsec2 },
+            { name: 'AWS Lambda', icon: awslambda },
+            { name: 'CloudWatch', icon: awscloudwatch },
+            { name: 'AWS IAM', icon: awsiam },
+        ],
+    },
+    {
+        label: 'Web & Tools',
+        items: [
+            { name: 'HTML 5', icon: html },
+            { name: 'CSS 3', icon: css },
+            { name: 'Bootstrap', icon: boot },
+            { name: 'git', icon: git },
+            { name: 'nginx', icon: nginx },
+        ],
     },
 ]
 
@@ -215,7 +272,7 @@ const projects = [
             },
         ],
         image: simmy,
-        repo: 'https://github.com/Milly801/PhishingFostres',
+        repo: 'https://github.com/franklinobiukwu/simmyfranks-webapp',
         demo: 'https://simmyfranks.com',
     },
     {
@@ -246,7 +303,7 @@ const projects = [
         demo: 'https://phishfortress.me',
     },
     {
-        id: 'project-2',
+        id: 'project-3',
         name: 'ThreatDetection',
         description:
             'This project demonstrates security vulnerabilities in web applications and how AWS GuardDuty can detect them. I deployed a purposely vulnerable web application (OWASP Juice Shop) and simulated various attacks while monitoring GuardDutys detection capabilities.',
@@ -255,7 +312,7 @@ const projects = [
         demo: 'https://github.com/habibaadam/Threat-Detection-GuardDuty',
     },
     {
-        id: 'project-3',
+        id: 'project-4',
         name: 'Celestial Palate',
         description:
             'A website for a high-end restaurant with locations in South Africa, Japan, and Italy.',
@@ -286,7 +343,7 @@ const projects = [
         demo: 'https://celestial-palate-portfolio.vercel.app/',
     },
     {
-        id: 'project-4',
+        id: 'project-5',
         name: 'Weather App',
         description:
             'A weather app that displays weather temperatures and forecast based on city searches.',
@@ -308,32 +365,6 @@ const projects = [
         repo: 'https://github.com/habibaadam/react-weather-app',
         demo: 'https://bibi-react-weather.netlify.app/',
     },
-    {
-        id: 'project-5',
-        name: 'Airbnb Clone',
-        description: 'A small copy or clone of the popular Airbnb website.',
-        tags: [
-            {
-                name: 'python',
-                color: 'blue-text-gradient',
-            },
-            {
-                name: 'sql',
-                color: 'green-text-gradient',
-            },
-            {
-                name: 'flask',
-                color: 'pink-text-gradient',
-            },
-            {
-                name: 'javascript',
-                color: 'pink-text-gradient',
-            },
-        ],
-        image: hbnb,
-        repo: 'https://github.com/mukoe2020/AirBnB_clone_v4',
-        demo: 'http://54.205.99.166:5003/2-hbnb',
-    },
 ]
 
-export { services, technologies, experiences, projects }
+export { services, technologies, technologyGroups, experiences, projects }

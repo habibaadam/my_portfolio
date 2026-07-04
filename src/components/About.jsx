@@ -37,7 +37,7 @@ const About = () => {
 
             <motion.div
                 variants={fadeIn('', '', 0.1, 1)}
-                className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px] flex flex-col gap-5"
+                className="mt-4 text-onyx text-[18px] max-w-3xl leading-[32px] flex flex-col gap-5"
             >
                 <p>
                     Habiba here :) I'm a full-stack engineer with a clear focus on backend
@@ -65,7 +65,7 @@ const About = () => {
                 </p>
                 <p>
                     Always learning, always building, and always pushing myself (and others) forward
-                    — one step at a time.
+                    one step at a time.
                 </p>
             </motion.div>
 
