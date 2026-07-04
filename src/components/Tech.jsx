@@ -35,7 +35,7 @@ const Tech = () => {
                         <p className="text-taupe uppercase tracking-widest text-[11px] font-semibold font-poppins mb-5 pb-2 border-b border-[rgba(153,153,161,0.25)]">
                             {group.label}
                         </p>
-                        <div className="flex flex-wrap gap-6">
+                        <div className="flex flex-wrap justify-center sm:justify-start gap-6">
                             {group.items.map((technology, index) => (
                                 <TechCard
                                     key={technology.name}

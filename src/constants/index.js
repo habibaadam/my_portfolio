@@ -300,7 +300,7 @@ const projects = [
         ],
         image: phishfortress,
         repo: 'https://github.com/Milly801/PhishingFostres',
-        demo: 'https://phishfortress.me',
+        demo: 'https://github.com/Milly801/PhishingFostres',
     },
     {
         id: 'project-3',

@@ -26,7 +26,7 @@ const Hero = () => {
         sm:bg-hero bg-hero-mobile overflow-hidden"
             >
                 <div
-                    className={`absolute inset-0 sm:top-[250px] top-[150px]
+                    className={`absolute inset-0 sm:top-[250px] top-[100px]
           lg:top-[150px] xl:top-[250px] ${styles.paddingX}
           max-w-7xl mx-auto flex flex-row items-start
           justify-between gap-3`}
