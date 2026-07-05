@@ -83,6 +83,7 @@ import simmy from './projects/simmy.png'
 import nextjs from './tech/nextjs.webp'
 import aws_security_specialty from './certifications/aws_security_specialty.png'
 import aws_solutions_architect from './certifications/aws_solutions_architect.png'
+import aws_community from './certifications/aws_community.png'
 import alx_logo from './certifications/alx_logo.webp'
 
 export {
@@ -166,4 +167,5 @@ export {
     aws_security_specialty,
     aws_solutions_architect,
     alx_logo,
+    aws_community,
 }

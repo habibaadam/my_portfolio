@@ -39,6 +39,7 @@ import {
     aws_security_specialty,
     aws_solutions_architect,
     alx_logo,
+    aws_community,
 } from '../assets'
 
 export const navLinks = [
@@ -394,7 +395,7 @@ const certifications = [
         level: 'Recognition',
         issuer: 'Amazon Web Services',
         date: '2025',
-        image: null,
+        image: aws_community,
         credentialUrl: 'https://aws.amazon.com/developer/community/community-builders/',
     },
     {
