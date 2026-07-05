@@ -36,6 +36,9 @@ import {
     awsec2,
     awscloudwatch,
     awsiam,
+    aws_security_specialty,
+    aws_solutions_architect,
+    alx_logo,
 } from '../assets'
 
 export const navLinks = [
@@ -367,4 +370,41 @@ const projects = [
     },
 ]
 
-export { services, technologies, technologyGroups, experiences, projects }
+const certifications = [
+    {
+        name: 'AWS Certified Security',
+        level: 'Specialty',
+        issuer: 'Amazon Web Services',
+        date: '2026',
+        image: aws_security_specialty,
+        credentialUrl:
+            'https://www.credly.com/badges/aa40ae1d-6a24-481d-8acf-47f72bbe3545/public_url',
+    },
+    {
+        name: 'AWS Certified Solutions Architect',
+        level: 'Associate',
+        issuer: 'Amazon Web Services',
+        date: '2025',
+        image: aws_solutions_architect,
+        credentialUrl:
+            'https://www.credly.com/badges/d9edda6f-cfd1-42c9-8865-0229deb23278/public_url',
+    },
+    {
+        name: 'AWS Community Builder',
+        level: 'Recognition',
+        issuer: 'Amazon Web Services',
+        date: '2025',
+        image: null,
+        credentialUrl: 'https://aws.amazon.com/developer/community/community-builders/',
+    },
+    {
+        name: 'ALX Software Engineering - Backend Speciality',
+        level: 'Certificate',
+        issuer: 'ALX/Holberton',
+        date: '2024',
+        image: alx_logo,
+        credentialUrl: 'https://intranet.alxswe.com/certificates/9ENHYXT3Bh',
+    },
+]
+
+export { services, technologies, technologyGroups, experiences, projects, certifications }
