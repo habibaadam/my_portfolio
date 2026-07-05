@@ -8,46 +8,53 @@ import { SectionWrapper } from '../hoc'
 import { download, downloadHover, resume, cv } from '../assets'
 import { textVariant } from '../utils/motion'
 
-const ExperienceCard = ({ experience }) => (
-    <VerticalTimelineElement
-        contentStyle={{
-            background: '#eaeaec',
-            color: '#292929',
-            boxShadow:
-                'rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px',
-        }}
-        contentArrowStyle={{
-            borderRight: '7px solid  #232631',
-        }}
-        date={
+const ExperienceCard = ({ experience }) => {
+    const isCurrent = experience.date.toLowerCase().includes('present')
+
+    return (
+        <VerticalTimelineElement
+            contentStyle={{
+                background: '#eaeaec',
+                color: '#292929',
+                boxShadow: 'rgba(0, 0, 0, 0.08) 0px 8px 24px, rgba(0, 0, 0, 0.04) 0px 2px 4px',
+            }}
+            contentArrowStyle={{
+                borderRight: '7px solid #eaeaec',
+            }}
+            date={
+                <p className="text-dim text-[13px] font-poppins font-medium uppercase tracking-widest">
+                    {experience.date}
+                </p>
+            }
+            iconStyle={{ background: experience.iconBg }}
+            icon={
+                <div className="flex justify-center items-center w-full h-full">
+                    <img
+                        src={experience.icon}
+                        alt={experience.company_name}
+                        className="w-[60%] h-[60%] object-contain"
+                    />
+                </div>
+            }
+        >
             <div>
-                <h3 className="text-dim text-[18px] font-bold font-beckman">{experience.date}</h3>
+                <div className="flex items-start justify-between gap-3">
+                    <h3 className="text-jetLight text-[21px] font-bold font-beckman tracking-[1px] leading-snug">
+                        {experience.title}
+                    </h3>
+                    {isCurrent && (
+                        <span className="shrink-0 mt-[3px] text-[9px] font-poppins font-bold uppercase tracking-widest px-2 py-1 rounded-full bg-night text-timberWolf">
+                            Now
+                        </span>
+                    )}
+                </div>
+                <p className="text-onyx text-[15px] font-semibold font-poppins mt-[6px]">
+                    {experience.company_name}
+                </p>
             </div>
-        }
-        iconStyle={{ background: experience.iconBg }}
-        icon={
-            <div className="flex justify-center items-center w-full h-full">
-                <img
-                    src={experience.icon}
-                    alt={experience.company_name}
-                    className="w-[60%] h-[60%] object-contain"
-                />
-            </div>
-        }
-    >
-        <div>
-            <h3 className="text-jetLight text-[24px] font-bold font-beckman tracking-[2px]">
-                {experience.title}
-            </h3>
-            <p
-                className="text-taupe text-[22px] font-semibold font-overcameBold tracking-[1px]"
-                style={{ margin: 0 }}
-            >
-                {experience.company_name}
-            </p>
-        </div>
-    </VerticalTimelineElement>
-)
+        </VerticalTimelineElement>
+    )
+}
 
 const Experience = () => {
     const downloadBtnRef = useRef(null)
@@ -76,13 +83,15 @@ const Experience = () => {
                             background: '#eaeaec',
                             color: '#292929',
                             boxShadow:
-                                'rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px',
+                                'rgba(0, 0, 0, 0.08) 0px 8px 24px, rgba(0, 0, 0, 0.04) 0px 2px 4px',
                             display: 'flex',
+                            flexDirection: 'column',
                             justifyContent: 'center',
                             alignItems: 'center',
+                            gap: '10px',
                         }}
                         contentArrowStyle={{
-                            borderRight: '7px solid  #232631',
+                            borderRight: '7px solid #eaeaec',
                         }}
                         iconStyle={{ background: '#333333' }}
                         icon={
@@ -95,15 +104,15 @@ const Experience = () => {
                             </div>
                         }
                     >
+                        <p className="text-dim text-[12px] font-poppins font-medium uppercase tracking-widest">
+                            Full CV available
+                        </p>
                         <button
-                            className="live-demo flex justify-between
-              sm:text-[18px] text-[14px] text-timberWolf
-              font-bold font-beckman items-center py-5 pl-3 pr-3
-              whitespace-nowrap gap-1 sm:w-[148px] sm:h-[58px]
-              w-[125px] h-[46px] rounded-[10px] bg-jetLight
-              sm:mt-[22px] mt-[16px] hover:bg-battleGray
-              hover:text-eerieBlack transition duration-[0.2s]
-              ease-in-out"
+                            className="live-demo flex items-center justify-center gap-2
+                            text-[14px] text-timberWolf font-bold font-beckman
+                            py-3 px-5 rounded-[10px] bg-jetLight
+                            hover:bg-battleGray hover:text-eerieBlack
+                            transition duration-200 ease-in-out whitespace-nowrap"
                             onClick={handleDownload}
                             onMouseOver={() => {
                                 downloadBtnRef.current?.setAttribute('src', downloadHover)
@@ -117,8 +126,7 @@ const Experience = () => {
                                 src={download}
                                 alt="download"
                                 ref={downloadBtnRef}
-                                className="download-btn sm:w-[26px] sm:h-[26px]
-                w-[23px] h-[23px] object-contain"
+                                className="w-[20px] h-[20px] object-contain"
                             />
                         </button>
                     </VerticalTimelineElement>
