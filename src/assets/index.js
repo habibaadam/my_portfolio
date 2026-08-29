@@ -79,6 +79,7 @@ import space from './projects/space-hub.png'
 import resumerocket from './projects/resumerocket.png'
 import phishfortress from './projects/phishfortress.png'
 import guardduty from './projects/guardduty.png'
+import akwannya from './projects/akwannya.png'
 import simmy from './projects/simmy.png'
 import nextjs from './tech/nextjs.webp'
 import aws_security_specialty from './certifications/aws_security_specialty.png'
@@ -156,6 +157,7 @@ export {
     phishlogo,
     simmyfranks,
     guardduty,
+    akwannya,
     awsvpc,
     awss3,
     awslambda,

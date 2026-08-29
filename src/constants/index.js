@@ -30,6 +30,7 @@ import {
     phishlogo,
     simmyfranks,
     guardduty,
+    akwannya,
     awsvpc,
     awss3,
     awslambda,
@@ -262,9 +263,28 @@ const experiences = [
 const projects = [
     {
         id: 'project-1',
+        name: 'Akwannya-Hub',
+        description:
+            'A web-app for a commuity driven initiative, featuring their programs, community events, opportunities and tech roadmaps',
+        tags: [
+            {
+                name: 'nextjs',
+                color: 'blue-text-gradient',
+            },
+            {
+                name: 'mongo',
+                color: 'green-text-gradient',
+            },
+        ],
+        image: akwannya,
+        repo: 'https://github.com/R0C0d6/akwannya-hub-website',
+        demo: 'https://akwannya-hub.org',
+    },
+    {
+        id: 'project-2',
         name: 'SimmyFranks',
         description:
-            'Built a Next.js-based corporate website for SimmyFranks, an e-commerce business focused on supplying premium laboratory equipment, chemicals, reagents and complete lab solutions in Nigeria. Implemented security and auth features including reCAPTCHA v3 for spam/bot protection and Google OAuth for user authentication, and resolved production deployment challenges to ensure a smooth launch.',
+            'Built a Next.js-based corporate web-app for SimmyFranks, an e-commerce business focused on supplying premium laboratory equipment, chemicals, reagents and complete lab solutions in Nigeria. Implemented security and auth features including reCAPTCHA v3 for spam/bot protection and Google OAuth for user authentication, and resolved production deployment challenges to ensure a smooth launch.',
         tags: [
             {
                 name: 'nextjs',
@@ -280,7 +300,7 @@ const projects = [
         demo: 'https://simmyfranks.com',
     },
     {
-        id: 'project-2',
+        id: 'project-3',
         name: 'PhishFortress',
         description:
             'A phishing detection tool/website that uses a real phishing simulation to detect phishing emails',
@@ -307,7 +327,7 @@ const projects = [
         demo: 'https://github.com/Milly801/PhishingFostres',
     },
     {
-        id: 'project-3',
+        id: 'project-4',
         name: 'ThreatDetection',
         description:
             'This project demonstrates security vulnerabilities in web applications and how AWS GuardDuty can detect them. I deployed a purposely vulnerable web application (OWASP Juice Shop) and simulated various attacks while monitoring GuardDutys detection capabilities.',
