@@ -366,29 +366,6 @@ const projects = [
         repo: 'https://github.com/habibaadam/Celestial-Palate-Portfolio',
         demo: 'https://celestial-palate-portfolio.vercel.app/',
     },
-    {
-        id: 'project-5',
-        name: 'Weather App',
-        description:
-            'A weather app that displays weather temperatures and forecast based on city searches.',
-        tags: [
-            {
-                name: 'react',
-                color: 'blue-text-gradient',
-            },
-            {
-                name: 'html',
-                color: 'green-text-gradient',
-            },
-            {
-                name: 'css',
-                color: 'pink-text-gradient',
-            },
-        ],
-        image: weather,
-        repo: 'https://github.com/habibaadam/react-weather-app',
-        demo: 'https://bibi-react-weather.netlify.app/',
-    },
 ]
 
 const certifications = [
