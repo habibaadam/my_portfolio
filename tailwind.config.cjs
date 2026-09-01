@@ -33,6 +33,7 @@ export default {
         cardLight: '0px 19px 38px #eaeaec, 0px 15px 12px #eaeaec',
       },
       screens: {
+        xxs: '350px',
         xs: '450px',
         sm: '640px',
         md: '768px',
@@ -49,9 +50,13 @@ export default {
           "linear-gradient(135deg, rgba(244,244,246,0.5) 60%, rgba(10,10,10,0.2) 100%),url('/src/assets/backgrounds/white-abstract.png')",
         experienceLight:
           'linear-gradient(137deg, rgba(244,244,246,0.5) 60%, rgba(10,10,10,0.9) 60%)',
-        hero: 'linear-gradient(135deg, rgba(244,244,246,0.8) 60%, rgba(10,10,10,0.95) 60%)',
+        // Near-vertical split: at 135deg the boundary was `x + y = 0.6(W + H)`,
+        // so the dark wedge advanced leftward down the page and swallowed the
+        // hero copy on shorter viewports. At 100deg it barely moves with height.
+        hero: 'linear-gradient(100deg, rgba(244,244,246,0.94) 60%, rgba(10,10,10,0.95) 60%)',
+        // Mobile splits horizontally instead: light top for the copy, dark below.
         'hero-mobile':
-          'linear-gradient(137deg, rgba(244,244,246,0.8) 60%, rgba(10,10,10,1) 60%)',
+          'linear-gradient(180deg, rgba(244,244,246,0.94) 68%, rgba(10,10,10,0.97) 68%)',
         tech: "linear-gradient(165deg, rgba(20,20,20,0.8) 100%, rgba(109,109,116,0.8) 100%), url('/src/assets/backgrounds/nairobi.png')",
       },
       fontFamily: {

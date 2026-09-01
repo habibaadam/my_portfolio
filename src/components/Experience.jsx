@@ -32,6 +32,8 @@ const ExperienceCard = ({ experience }) => {
                     <img
                         src={experience.icon}
                         alt={experience.company_name}
+                        loading="lazy"
+                        decoding="async"
                         className="w-[60%] h-[60%] object-contain"
                     />
                 </div>
@@ -75,8 +77,11 @@ const Experience = () => {
 
             <div className="mt-20 flex flex-col">
                 <VerticalTimeline className="vertical-timeline-custom-line">
-                    {experiences.map((experience, index) => (
-                        <ExperienceCard key={index} experience={experience} />
+                    {experiences.map((experience) => (
+                        <ExperienceCard
+                            key={`${experience.company_name}-${experience.date}`}
+                            experience={experience}
+                        />
                     ))}
                     <VerticalTimelineElement
                         contentStyle={{

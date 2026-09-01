@@ -30,12 +30,18 @@
   src: url('./fonts/overcame-outline.woff');
 }
 
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
-  color-scheme: dark;
 }
 
 .nav-links::after {
@@ -52,32 +58,17 @@
   width: 70%;
 }
 
-#about {
-  margin-left: -24px;
-  font-size: 100px;
-}
-
-#projects {
-  margin-left: -2px;
-  font-size: 100px;
-}
-
-#contact {
-  margin-left: -20px;
-  font-size: 95px;
-  letter-spacing: -2px;
-}
-
 .hero-heading {
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
 }
 
+/* Anchor targets sit under the fixed navbar, so offset where they scroll to
+   rather than padding the element out with an oversized font-size. */
 .hash-span {
-  margin-top: -100px;
-  padding-bottom: 100px;
   display: block;
+  scroll-margin-top: 90px;
 }
 
 .vertical-timeline.vertical-timeline-custom-line::before {
@@ -230,26 +221,64 @@
   }
 }
 
-@media only screen and (max-width: 1000px) {
-  #about {
-  margin: 0 auto;
-  font-size: 50px;
- }
-
-#projects {
-  margin: 0 auto;
-  font-size: 50px;
+/* Vertical title for collapsed project cards. Real vertical writing mode means
+   the browser lays the text out along the card's height, so a long project name
+   ellipsizes inside the card instead of escaping a fixed-width rotated box. */
+.vertical-title {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-#contact {
-  margin: 0 auto;
-  font-size: 50px;
-  letter-spacing: -2px;
+/* Shared treatment for the primary call-to-action controls. */
+.live-demo {
+  outline: none;
 }
 
-.bg-flashWhite {
-  background-color: rgb(172, 168, 168);
+.live-demo:focus-visible {
+  outline: 2px solid #d4d4d8;
+  outline-offset: 3px;
 }
 
+.live-demo:active {
+  transform: scale(0.97);
+}
 
+/* Mobile navigation overlay. */
+.menu {
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+.menu-open {
+  opacity: 0.98;
+  transform: translateX(0);
+  visibility: visible;
+}
+
+/* visibility:hidden also removes the links from the tab order while closed. */
+.menu-close {
+  opacity: 0;
+  transform: translateX(100%);
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .tech-icon {
+    animation: none;
+  }
+
+  .menu {
+    transition: none;
+  }
+
+  .live-demo:active {
+    transform: none;
+  }
 }

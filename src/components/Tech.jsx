@@ -13,7 +13,13 @@ const TechCard = ({ name, icon, index }) => (
             className="bg-jetLight rounded-full w-28 h-28 flex flex-col items-center justify-center gap-1 tech-icon"
             style={{ animationDelay: `${index * 0.1}s` }}
         >
-            <img src={icon} alt={name} className="w-12 h-12 object-contain" />
+            <img
+                src={icon}
+                alt={name}
+                loading="lazy"
+                decoding="async"
+                className="w-12 h-12 object-contain"
+            />
             <span className="text-timberWolf text-[9px] font-poppins text-center px-2 leading-tight">
                 {name}
             </span>
@@ -51,4 +57,4 @@ const Tech = () => {
     )
 }
 
-export default SectionWrapper(Tech, '')
+export default SectionWrapper(Tech, 'tech')

@@ -1,55 +1,57 @@
 import { motion } from 'framer-motion'
-import { Link } from 'react-router-dom'
 import { styles } from '../styles'
-import { navLinks } from '../constants'
-import { shaq, bwmap, habiba, worldmap } from '../assets'
+import { bwmap, worldmap } from '../assets'
 
 const Hero = () => {
     return (
         <>
-            <div className="absolute top-0 left-0 z-0 h-[100vh] w-screen">
+            <div className="absolute top-0 left-0 z-0 h-[100svh] w-full overflow-hidden">
                 <img
                     src={bwmap}
-                    alt="world map"
+                    alt=""
+                    aria-hidden="true"
+                    decoding="async"
                     className="w-full h-full sm:block hidden object-cover"
                 />
-            </div>
-            <div className="absolute top-0 left-0 z-0 h-[100vh] w-screen">
                 <img
                     src={worldmap}
-                    alt="world map"
+                    alt=""
+                    aria-hidden="true"
+                    decoding="async"
                     className="w-full h-full sm:hidden block object-cover"
                 />
             </div>
             <section
-                className="relative flex sm:flex-row flex-col w-full h-screen mx-auto
+                className="relative flex sm:flex-row flex-col w-full h-[100svh] mx-auto
         sm:bg-hero bg-hero-mobile overflow-hidden"
             >
                 <div
-                    className={`absolute inset-0 sm:top-[250px] top-[100px]
+                    className={`absolute inset-x-0 top-0 h-[68%] items-center
+          sm:h-auto sm:inset-0 sm:top-[250px] sm:items-start
           lg:top-[150px] xl:top-[250px] ${styles.paddingX}
-          max-w-7xl mx-auto flex flex-row items-start
-          justify-between gap-3`}
+          max-w-7xl mx-auto flex flex-row gap-3`}
                 >
                     <div className="flex flex-col justify-center items-center mt-5 ml-3">
                         <div className="w-5 h-5 rounded-full bg-[#0a0a0a] sm:hidden" />
                         <div className="w-1 sm:h-80 h-40 bw-gradient sm:hidden" />
                     </div>
 
-                    <div>
+                    {/* Ceiling keeps the copy clear of the dark half at every width.
+                        Without it the <p> was unbounded and ran into the dark. */}
+                    <div className="min-w-0 sm:max-w-[50%]">
                         <h1
                             className={`${styles.heroHeadText} text-eerieBlack font-poppins uppercase`}
                         >
                             Hi, I'm{' '}
                             <span
-                                className="sm:text-battleGray sm:text-[90px]
+                                className="sm:text-dim sm:text-[90px]
                 text-eerieBlack text-[50px] font-mova
                 font-extrabold uppercase"
                             >
                                 Habiba
                             </span>
                         </h1>
-                        <p className={`${styles.heroSubText} mt-2 text-eerieBlack`}>
+                        <p className={`${styles.heroSubText} mt-2 text-eerieBlack text-balance`}>
                             Full-Stack Engineer · Backend Specialist
                             <br />
                             AWS Certified Solutions Architect &amp; Security Specialty
@@ -57,19 +59,13 @@ const Hero = () => {
                             AWS Community Builder
                         </p>
                     </div>
-                    <div
-                        className="w-screen flex flex-col items-start
-            justify-center sm:-ml-[3rem] xxs:mt-4"
-                    ></div>
-
-                    <div></div>
                 </div>
 
                 <div
                     className="absolute xs:bottom-10 bottom-32 w-full
           flex justify-center items-center"
                 >
-                    <a href="#about">
+                    <a href="#about" aria-label="Scroll to the about section">
                         <div
                             className="w-[35px] h-[64px] rounded-3xl border-4
             border-french border-dim flex
@@ -89,9 +85,6 @@ const Hero = () => {
                         </div>
                     </a>
                 </div>
-
-                {/* Your image comes here. Feel free to remove image if you don't plan to have one.*/}
-                <div></div>
             </section>
         </>
     )

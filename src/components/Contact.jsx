@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import emailjs from '@emailjs/browser'
 import { styles } from '../styles'
@@ -12,6 +12,8 @@ const Toast = ({ message, type, onDismiss }) => (
         animate={{ opacity: 1, y: 0, scale: 1 }}
         exit={{ opacity: 0, y: 20, scale: 0.95 }}
         transition={{ duration: 0.25 }}
+        role="status"
+        aria-live="polite"
         className={`fixed bottom-6 right-6 z-50 flex items-center gap-3 px-5 py-4
             rounded-xl shadow-2xl font-poppins text-[14px] font-medium max-w-[320px]
             ${
@@ -42,11 +44,17 @@ const Contact = () => {
     const [form, setForm] = useState({ name: '', email: '', message: '' })
     const [loading, setLoading] = useState(false)
     const [toast, setToast] = useState(null)
+    const toastTimerRef = useRef(null)
 
+    // Without clearing, a second toast within 4.5s is dismissed early by the
+    // first one's timer, and a pending timer can fire after unmount.
     const showToast = (message, type) => {
+        clearTimeout(toastTimerRef.current)
         setToast({ message, type })
-        setTimeout(() => setToast(null), 4500)
+        toastTimerRef.current = setTimeout(() => setToast(null), 4500)
     }
+
+    useEffect(() => () => clearTimeout(toastTimerRef.current), [])
 
     const handleChange = (e) => {
         const { name, value } = e.target
@@ -92,12 +100,15 @@ const Contact = () => {
                         key="toast"
                         message={toast.message}
                         type={toast.type}
-                        onDismiss={() => setToast(null)}
+                        onDismiss={() => {
+                            clearTimeout(toastTimerRef.current)
+                            setToast(null)
+                        }}
                     />
                 )}
             </AnimatePresence>
 
-            <div className="-mt-[8rem]">
+            <div>
                 <motion.div
                     variants={fadeIn('up', 'tween', 0.2, 0.8)}
                     className="max-w-2xl mx-auto"

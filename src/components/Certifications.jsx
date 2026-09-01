@@ -19,6 +19,8 @@ const CertCard = ({ name, level, issuer, date, image, credentialUrl, index }) =>
                 <img
                     src={image}
                     alt={name}
+                    loading="lazy"
+                    decoding="async"
                     className="max-w-[140px] max-h-[140px] object-contain"
                 />
             ) : (

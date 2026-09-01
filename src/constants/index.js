@@ -1,3 +1,4 @@
+import { serverlessbreakglass } from '../assets'
 import { logo } from '../assets'
 import {
     frontend,
@@ -51,6 +52,10 @@ export const navLinks = [
     {
         id: 'projects',
         title: 'Projects',
+    },
+    {
+        id: 'work',
+        title: 'Work',
     },
     {
         id: 'contact',
@@ -301,6 +306,32 @@ const projects = [
     },
     {
         id: 'project-3',
+        name: 'Serverless Break Glass Access System',
+        description: 'A serverless solution for emergency access management.',
+        tags: [
+            {
+                name: 'aws lambda',
+                color: 'blue-text-gradient',
+            },
+            {
+                name: 'aws step functions',
+                color: 'pink-text-gradient',
+            },
+            {
+                name: 'aws sns',
+                color: 'green-text-gradient',
+            },
+            {
+                name: 'aws eventbridge',
+                color: 'pink-text-gradient',
+            },
+        ],
+        image: serverlessbreakglass,
+        repo: 'https://github.com/habibaadam/Serverless-Break-Glass-Access-System',
+        demo: 'https://github.com/habibaadam/Serverless-Break-Glass-Access-System',
+    },
+    {
+        id: 'project-4',
         name: 'PhishFortress',
         description:
             'A phishing detection tool/website that uses a real phishing simulation to detect phishing emails',
@@ -327,16 +358,26 @@ const projects = [
         demo: 'https://github.com/Milly801/PhishingFostres',
     },
     {
-        id: 'project-4',
+        id: 'project-5',
         name: 'ThreatDetection',
         description:
             'This project demonstrates security vulnerabilities in web applications and how AWS GuardDuty can detect them. I deployed a purposely vulnerable web application (OWASP Juice Shop) and simulated various attacks while monitoring GuardDutys detection capabilities.',
+        tags: [
+            {
+                name: 'aws',
+                color: 'blue-text-gradient',
+            },
+            {
+                name: 'guardduty',
+                color: 'pink-text-gradient',
+            },
+        ],
         image: guardduty,
         repo: 'https://github.com/habibaadam/Threat-Detection-GuardDuty',
         demo: 'https://github.com/habibaadam/Threat-Detection-GuardDuty',
     },
     {
-        id: 'project-4',
+        id: 'project-6',
         name: 'Celestial Palate',
         description:
             'A website for a high-end restaurant with locations in South Africa, Japan, and Italy.',
