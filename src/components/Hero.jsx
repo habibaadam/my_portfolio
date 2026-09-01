@@ -26,8 +26,8 @@ const Hero = () => {
         sm:bg-hero bg-hero-mobile overflow-hidden"
             >
                 <div
-                    className={`absolute inset-x-0 top-0 h-[68%] items-center
-          sm:h-auto sm:inset-0 sm:top-[250px] sm:items-start
+                    className={`absolute inset-x-0 top-0 h-[82%] items-center pt-[72px]
+          sm:h-auto sm:inset-0 sm:top-[250px] sm:items-start sm:pt-0
           lg:top-[150px] xl:top-[250px] ${styles.paddingX}
           max-w-7xl mx-auto flex flex-row gap-3`}
                 >
@@ -62,7 +62,7 @@ const Hero = () => {
                 </div>
 
                 <div
-                    className="absolute xs:bottom-10 bottom-32 w-full
+                    className="absolute bottom-10 w-full
           flex justify-center items-center"
                 >
                     <a href="#about" aria-label="Scroll to the about section">

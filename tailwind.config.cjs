@@ -44,8 +44,6 @@ export default {
         '3xl': '1800px',
       },
       backgroundImage: {
-        about:
-          'linear-gradient(165deg, rgba(244,244,246,1) 100%, rgba(122,122,122,1) 100%)',
         experience:
           "linear-gradient(135deg, rgba(244,244,246,0.5) 60%, rgba(10,10,10,0.2) 100%),url('/src/assets/backgrounds/white-abstract.png')",
         experienceLight:
@@ -56,7 +54,7 @@ export default {
         hero: 'linear-gradient(100deg, rgba(244,244,246,0.94) 60%, rgba(10,10,10,0.95) 60%)',
         // Mobile splits horizontally instead: light top for the copy, dark below.
         'hero-mobile':
-          'linear-gradient(180deg, rgba(244,244,246,0.94) 68%, rgba(10,10,10,0.97) 68%)',
+          'linear-gradient(180deg, rgba(244,244,246,0.94) 82%, rgba(10,10,10,0.97) 82%)',
         tech: "linear-gradient(165deg, rgba(20,20,20,0.8) 100%, rgba(109,109,116,0.8) 100%), url('/src/assets/backgrounds/nairobi.png')",
       },
       fontFamily: {

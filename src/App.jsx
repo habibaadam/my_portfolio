@@ -19,7 +19,7 @@ const App = () => {
           <Hero />
         </div>
 
-        <div className="bg-about bg-cover bg-center bg-no-repeat">
+        <div className="about-canvas">
           <About />
         </div>
 
