@@ -16,8 +16,7 @@ import {
     nodejs,
     git,
     celestial,
-    weather,
-    hbnb,
+    devArena,
     mongo,
     optima,
     hacsa,
@@ -268,6 +267,33 @@ const experiences = [
 const projects = [
     {
         id: 'project-1',
+        name: 'devArena',
+        description:
+            'A real-time, team-based coding competition platform that grades code in sandboxes and streams live standings.',
+        tags: [
+            {
+                name: 'aws-ssm',
+                color: 'blue-text-gradient',
+            },
+            {
+                name: 'aws-ecr',
+                color: 'orange-text-gradient',
+            },
+            {
+                name: 'nestjs',
+                color: 'red-text-gradient',
+            },
+            {
+                name: 'postgresql',
+                color: 'blue-text-gradient',
+            },
+        ],
+        image: devArena,
+        repo: 'https://github.com/habibaadam/devArena_FaceOff',
+        demo: 'https://faceoff.akwannya-hub.org',
+    },
+    {
+        id: 'project-2',
         name: 'Akwannya-Hub',
         description:
             'A web-app for a commuity driven initiative, featuring their programs, community events, opportunities and tech roadmaps',
@@ -286,7 +312,7 @@ const projects = [
         demo: 'https://akwannya-hub.org',
     },
     {
-        id: 'project-2',
+        id: 'project-3',
         name: 'SimmyFranks',
         description:
             'Built a Next.js-based corporate web-app for SimmyFranks, an e-commerce business focused on supplying premium laboratory equipment, chemicals, reagents and complete lab solutions in Nigeria. Implemented security and auth features including reCAPTCHA v3 for spam/bot protection and Google OAuth for user authentication, and resolved production deployment challenges to ensure a smooth launch.',
@@ -299,13 +325,17 @@ const projects = [
                 name: 'mongo',
                 color: 'green-text-gradient',
             },
+            {
+                name: 'postgresql',
+                color: 'pink-text-gradient',
+            },
         ],
         image: simmy,
         repo: 'https://github.com/franklinobiukwu/simmyfranks-webapp',
         demo: 'https://simmyfranks.com',
     },
     {
-        id: 'project-3',
+        id: 'project-4',
         name: 'Serverless Break Glass Access System',
         description: 'A serverless solution for emergency access management.',
         tags: [
@@ -329,33 +359,6 @@ const projects = [
         image: serverlessbreakglass,
         repo: 'https://github.com/habibaadam/Serverless-Break-Glass-Access-System',
         demo: 'https://github.com/habibaadam/Serverless-Break-Glass-Access-System',
-    },
-    {
-        id: 'project-4',
-        name: 'PhishFortress',
-        description:
-            'A phishing detection tool/website that uses a real phishing simulation to detect phishing emails',
-        tags: [
-            {
-                name: 'python',
-                color: 'blue-text-gradient',
-            },
-            {
-                name: 'fastapi',
-                color: 'pink-text-gradient',
-            },
-            {
-                name: 'react-js',
-                color: 'green-text-gradient',
-            },
-            {
-                name: 'postgresql',
-                color: 'pink-text-gradient',
-            },
-        ],
-        image: phishfortress,
-        repo: 'https://github.com/Milly801/PhishingFostres',
-        demo: 'https://github.com/Milly801/PhishingFostres',
     },
     {
         id: 'project-5',

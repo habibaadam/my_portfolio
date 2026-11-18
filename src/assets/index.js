@@ -80,6 +80,7 @@ import resumerocket from './projects/resumerocket.png'
 import phishfortress from './projects/phishfortress.png'
 import guardduty from './projects/guardduty.png'
 import akwannya from './projects/akwannya.png'
+import devArena from './projects/devArena.png'
 import serverlessbreakglass from './projects/serverlessbreakglass.jpg'
 import simmy from './projects/simmy.png'
 import nextjs from './tech/nextjs.webp'
@@ -172,4 +173,5 @@ export {
     alx_logo,
     aws_community,
     serverlessbreakglass,
+    devArena,
 }
